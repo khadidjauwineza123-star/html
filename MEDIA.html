@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery | HTML Only Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>Multimedia Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Registration Form</a></li>
+                <li><a href="media.html">Media Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Image Gallery</h2>
+            
+            <figure>
+                <img src="https://via.placeholder.com/300" alt="Sample Project Screenshot" width="300">
+                <figcaption>Figure 1: A preview of a web development project mockup.</figcaption>
+            </figure>
+
+            <picture>
+                <source srcset="https://via.placeholder.com/400" media="(min-width: 800px)">
+                <img src="https://via.placeholder.com/200" alt="Responsive Placeholder">
+            </picture>
+        </section>
+
+        <section>
+            <h2>Audio Content</h2>
+            <p>Listen to a brief project introduction:</p>
+            <audio controls>
+                <source src="audio-sample.mp3" type="audio/mpeg">
+                <track kind="captions" src="captions.vtt" srclang="en" label="English">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video Demonstration</h2>
+            <p>Watch the walkthrough of the application workflow:</p>
+            <video width="320" height="240" controls>
+                <source src="video-sample.mp4" type="video/mp4">
+                <object data="video-sample.mp4" width="320" height="240">
+                    <embed src="video-sample.mp4" width="320" height="240">
+                </object>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Interactive Image Map</h2>
+            <p>Click on different parts of the image to navigate:</p>
+            <img src="https://via.placeholder.com/400x200" alt="Workplace" usemap="#workmap" width="400" height="200">
+            
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="services.html">
+                <area shape="circle" coords="337,300,44" alt="Coffee" href="contact.html">
+            </map>
+        </section>
+
+        <section>
+            <template id="my-template">
+                <p>This content is hidden until rendered via script (Checklist Requirement).</p>
+            </template>
+            <noscript>
+                <p>Note: Your browser does not support JavaScript, which is perfect for this assignment!</p>
+            </noscript>
+            <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Flexon Portfolio | Media Module Complete</p>
+    </footer>
+
+</body>
+</html>

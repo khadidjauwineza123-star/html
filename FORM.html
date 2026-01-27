@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | HTML Only Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>User Registration & Feedback</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Registration Form</a></li>
+                <li><a href="media.html">Media Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Complete the Form</h2>
+            <p>Please provide your details below. All fields are built with pure HTML.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required placeholder="Enter first name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="pass">
+                    </p>
+
+                    <p>
+                        <label for="bday">Date of Birth:</label>
+                        <input type="date" id="bday" name="bday">
+                    </p>
+
+                    <p>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences & Skills</legend>
+                    
+                    <p>
+                        <label for="browser">Choose your favorite browser:</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Safari">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="role">Primary Role:</label>
+                        <select id="role" name="role">
+                            <optgroup label="Technical">
+                                <option value="dev">Developer</option>
+                                <option value="designer">Designer</option>
+                            </optgroup>
+                            <optgroup label="Management">
+                                <option value="manager">Project Manager</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="points">Skill Level (Range):</label>
+                        <input type="range" id="points" name="points" min="0" max="10">
+                    </p>
+
+                    <p>
+                        <label for="color">Favorite Brand Color:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Data</legend>
+                    <p>
+                        <label for="bio">Short Biography:</label><br>
+                        <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="qty">Number of Projects (Output Example):</label>
+                        <input type="number" id="qty" name="qty" min="1" max="100">
+                        <output name="result" for="qty">Ready</output>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Flexon Project | Form Submission Module</p>
+    </footer>
+
+</body>
+</html>
