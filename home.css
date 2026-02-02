@@ -1,0 +1,28 @@
+.header {
+    background-color: aqua;
+    color: black;
+    height: 50px;
+    width: 1000px;
+}
+
+.link {
+    background-color: black;
+    color: blue;
+    height: 50px;
+    width: 1000px;
+}
+
+.body {
+    background-color: blueviolet;
+    height: 400px;
+    width: 1000px;
+    background-image: url(aa.png);
+
+}
+
+.footer {
+    background-color: aqua;
+    color: black;
+    height: 50px;
+    width: 1000px;
+}
